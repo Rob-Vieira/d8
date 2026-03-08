@@ -1,5 +1,5 @@
 import { Player } from './player.js'
-import { getColorSync } from 'https://unpkg.com/colorthief@3/dist/index.js';
+// import { getColorSync } from 'https://unpkg.com/colorthief@3/dist/index.js';
 
 export class PlayerDOM {
     /**
@@ -78,9 +78,9 @@ export class PlayerDOM {
 
     /**
      * @param { string } player_id
-     * @param { string } hidden_player_id
+     * @param { () => void } on_change_music
      */
-    constructor(player_id, hidden_player_id) {
+    constructor(player_id, on_change_music = () => undefined) {
         this.previous_el = document.querySelector(`#${player_id} .previous`);
         this.next_el = document.querySelector(`#${player_id} .next`);
         this.play_el = document.querySelector(`#${player_id} .play`);
@@ -94,6 +94,8 @@ export class PlayerDOM {
         this.current_time_el = document.querySelector(`#${player_id} .current-time`);
         this.time_target_el = document.querySelector(`#${player_id} .time-target`);
         this.active_bar_el = document.querySelector(`#${player_id} .active-bar`);
+
+        this.on_change_music = on_change_music;
 
         // this.start(hidden_player_id);
     }
@@ -121,6 +123,9 @@ export class PlayerDOM {
         this.sync_view();
 
         this.add_events();
+
+        const current_music = this.player.get_current_music();
+        if(this.on_change_music) this.on_change_music(current_music.bg_color);
     }
 
     add_events() {
@@ -130,7 +135,7 @@ export class PlayerDOM {
         this.alternate_el.addEventListener('click', () => { this.change_alternate() });
         this.loop_el.addEventListener('click', () => { this.change_loop() });
 
-        this.thumb_el.addEventListener('load', () => { this.get_color() });
+        // this.thumb_el.addEventListener('load', () => { this.get_color() });
     }
 
     get_color() {
@@ -150,6 +155,8 @@ export class PlayerDOM {
         }
 
         this.sync_view();
+        const current_music = this.player.get_current_music();
+        if(this.on_change_music) this.on_change_music(current_music.bg_color)
     }
 
     play_pause() {

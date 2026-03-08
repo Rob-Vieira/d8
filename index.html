@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D8</title>
+    
+    <title>Dia 08</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="content">
+<body class="no-scroll">
+    <div class="loading-box open">
+        <div class="loader"></div>
+    </div>
+
+    <div class="player-box">
         <div id="player">
             <div id="hidden_player" style="width:0;height:0;overflow:hidden;"></div>
 
@@ -55,7 +62,166 @@
             </div>
         </div>
     </div>
+    <div class="date-box">
+        <div class="date-card">
+            <!-- <span class="card-float-title">Sobre o casal</span> -->
+            <img src="images/sobre.jpg" alt="">
+            <div class="card-content">
+                <span class="card-title">Robson e Marcely</span>
+                <span class="card-info">Juntos desde 2025</span>
+                <div class="card-date-grid">
+                    <div>
+                        <span id="year">0</span>
+                        <span>Anos</span>
+                    </div>
+                    <div>
+                        <span id="mouth">0</span>
+                        <span>Meses</span>
+                    </div>
+                    <div>
+                        <span id="day">0</span>
+                        <span>Dias</span>
+                    </div>
+                    <div>
+                        <span id="hour">0</span>
+                        <span>Horas</span>
+                    </div>
+                    <div>
+                        <span id="minute">0</span>
+                        <span>Minutos</span>
+                    </div>
+                    <div>
+                        <span id="second">0</span>
+                        <span>Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box">
+        <div class="message-card">
+            <div class="float-title">
+                Mensagem especial
+            </div>
+            <div class="message">
+                <p>Oi meu amor♥️</p>
+                <p>
+                    Talvez esse não seja o presente que você estava esperando hoje, mas tenha certeza que 
+                    fiz com todo carinho do mundo. 
+                </p>
+                <br>
+                <p>
+                    E essa ideia começou como uma brincadeira para mim, mas quando as coisas foram tomando
+                    forma eu não consegui parar de fazer. Todas vez que eu ouvia umas das nossas músicas 
+                    esse pequeno site se tornva cada vez mais especial, cada foto uma lembraça que aqueceu
+                    meu peito. No começo era um presente para você, mas agora que terminei percebi que foi
+                    que ganhei um presente... você. Cada hora que passei acordado nesse projeto valeu muito
+                    a pena. 
+                </p>
+                <br>
+                <p>
+                    Eu só tenho a agredecer pela sua presença na minha vida, por que é você que trás graça
+                    para o meu mundo.
+                </p>
+                <p>
+                    Te amo!!
+                </p>
+            </div>
+            <div class="message-shadow"></div>
+            <div class="message-btn-box">
+                <button id="message-btn">Mostar mensagem</button>
+            </div>
+        </div>
+    </div>
+    <div class="galery-box">
+        <div class="galery-card">
+            <div class="float-title">
+                Sobre nós
+            </div>
+            <div class="galery-grid">
+                <div slide-target="fav">
+                    <img src="images/galery/fav_capa.jpg" alt="">
+                    <span>Minhas favoritas</span>
+                </div>
+                <div slide-target="ale">
+                    <img src="images/galery/ale_capa.jpeg" alt="">
+                    <span>Fotos aleatórias</span>
+                </div>
+                <div slide-target="esp">
+                    <img src="images/galery/esp_capa.jpg" alt="">
+                    <span>Dias especiais</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="slide-box">
+        <button id="close-slide">
+            <i class="iconoir-xmark"></i>
+        </button>
+
+        <img src="images/galery/fav/1.jpg" alt="">
+
+        <div class="slide-control">
+            <button id="slide-prev">
+                <i class="iconoir-page-left"></i>
+            </button>
+            <button id="slide-next">
+                <i class="iconoir-page-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="imgs">
+        <img src="images\galery\ale\1.jpg" alt="">
+        <img src="images\galery\ale\2.jpg" alt="">
+        <img src="images\galery\ale\3.jpg" alt="">
+        <img src="images\galery\ale\4.jpg" alt="">
+        <img src="images\galery\ale\5.jpg" alt="">
+        <img src="images\galery\ale\6.jpg" alt="">
+        <img src="images\galery\ale\7.jpg" alt="">
+        <img src="images\galery\ale\8.jpg" alt="">
+        <img src="images\galery\ale\9.jpg" alt="">
+        <img src="images\galery\ale\10.jpg" alt="">
+        <img src="images\galery\ale\11.jpg" alt="">
+        <img src="images\galery\ale\12.jpg" alt="">
+        <img src="images\galery\ale\13.jpg" alt="">
+        <img src="images\galery\ale\14.jpg" alt="">
+        <img src="images\galery\ale\15.jpg" alt="">
+        
+        <img src="images\galery\esp\1.jpg" alt="">
+        <img src="images\galery\esp\2.jpg" alt="">
+        <img src="images\galery\esp\3.jpg" alt="">
+        <img src="images\galery\esp\4.jpg" alt="">
+        <img src="images\galery\esp\5.jpg" alt="">
+        <img src="images\galery\esp\6.jpg" alt="">
+        <img src="images\galery\esp\7.jpg" alt="">
+        <img src="images\galery\esp\8.jpg" alt="">
+        <img src="images\galery\esp\9.jpg" alt="">
+        <img src="images\galery\esp\10.jpg" alt="">
+        <img src="images\galery\esp\11.jpg" alt="">
+        <img src="images\galery\esp\12.jpg" alt="">
+        <img src="images\galery\esp\13.jpg" alt="">
+        <img src="images\galery\esp\14.jpg" alt="">
+        <img src="images\galery\esp\15.jpg" alt="">
+        
+        <img src="images\galery\fav\1.jpg" alt="">
+        <img src="images\galery\fav\2.jpg" alt="">
+        <img src="images\galery\fav\3.jpg" alt="">
+        <img src="images\galery\fav\4.jpg" alt="">
+        <img src="images\galery\fav\5.jpg" alt="">
+        <img src="images\galery\fav\6.jpg" alt="">
+        <img src="images\galery\fav\7.jpg" alt="">
+        <img src="images\galery\fav\8.jpg" alt="">
+        <img src="images\galery\fav\9.jpg" alt="">
+        <img src="images\galery\fav\10.jpg" alt="">
+        <img src="images\galery\fav\11.jpg" alt="">
+        <img src="images\galery\fav\12.jpg" alt="">
+        <img src="images\galery\fav\13.jpg" alt="">
+        <img src="images\galery\fav\14.jpg" alt="">
+        <img src="images\galery\fav\15.jpg" alt="">
+        <img src="images\galery\fav\16.jpg" alt="">
+    </div>
 
     <script src="https://www.youtube.com/iframe_api"></script>
     <script type="module" src="js/index.js"></script>

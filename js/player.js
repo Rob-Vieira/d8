@@ -7,7 +7,7 @@ export class Player {
     element_id = '';
 
     /**
-     * @type {{ code: string, name: string, author: string, image: string }[]}
+     * @type {{ code: string, name: string, author: string, image: string, bg_color: number[] }[]}
      */
     musics = [];
 
