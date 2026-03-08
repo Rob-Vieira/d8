@@ -320,7 +320,7 @@ body.no-scroll {
     border-radius: 16px;
     font-weight: bold;
     cursor: pointer;
-    
+
 }
 
 /* Galery */
@@ -329,7 +329,7 @@ body.no-scroll {
     max-width: 430px;
     padding: 16px;
     color: #fff;
-        margin: 0 auto;
+    margin: 0 auto;
 }
 
 .galery-card {
@@ -344,14 +344,17 @@ body.no-scroll {
     justify-content: space-between;
     gap: 16px;
 }
+
 .galery-grid div {
     width: 90%;
     position: relative;
 }
+
 .galery-grid div img {
     width: 100%;
     border-radius: 8px;
 }
+
 .galery-grid div span {
     width: 100%;
     position: absolute;
@@ -377,7 +380,7 @@ body.no-scroll {
     display: none;
 }
 
-.slide-box.open{
+.slide-box.open {
     display: flex;
 }
 
@@ -393,6 +396,7 @@ body.no-scroll {
     width: 80%;
     justify-content: space-between;
 }
+
 .slide-control button {
     font-size: 40px;
     color: #fff;
@@ -400,7 +404,7 @@ body.no-scroll {
     border: none;
 }
 
-#close-slide{
+#close-slide {
     position: absolute;
     top: 16px;
     right: calc(10% - 10px);
@@ -413,7 +417,7 @@ body.no-scroll {
 
 /* Loader */
 
-.loading-box{
+.loading-box {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -427,25 +431,30 @@ body.no-scroll {
     display: none;
 }
 
-.loading-box.open{
+.loading-box.open {
     display: flex;
 }
 
 .loader {
-  width: 60px;
-  aspect-ratio: 1;
-  background: linear-gradient(#dc1818 0 0) bottom/100% 0% no-repeat #ccc;
-  -webkit-mask: 
-    radial-gradient(circle at 60% 65%, #000 62%, #0000 65%) top left, 
-    radial-gradient(circle at 40% 65%, #000 62%, #0000 65%) top right, 
-    linear-gradient(to bottom left, #000 42%,#0000 43%) bottom left , 
-    linear-gradient(to bottom right,#000 42%,#0000 43%) bottom right;
-  -webkit-mask-size: 50% 50%;
-  -webkit-mask-repeat: no-repeat;
-  animation: l19 2s infinite linear;
+    width: 60px;
+    aspect-ratio: 1;
+    background: linear-gradient(#dc1818 0 0) bottom/100% 0% no-repeat #ccc;
+    -webkit-mask:
+        radial-gradient(circle at 60% 65%, #000 62%, #0000 65%) top left,
+        radial-gradient(circle at 40% 65%, #000 62%, #0000 65%) top right,
+        linear-gradient(to bottom left, #000 42%, #0000 43%) bottom left,
+        linear-gradient(to bottom right, #000 42%, #0000 43%) bottom right;
+    -webkit-mask-size: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    animation: l19 2s infinite linear;
 }
+
 @keyframes l19 {
-    90%,100% {background-size:100% 100%}
+
+    90%,
+    100% {
+        background-size: 100% 100%
+    }
 }
 
 @media (max-width: 429px) {
