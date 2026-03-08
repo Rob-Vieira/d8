@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D8</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div id="player">
+            <div id="hidden_player" style="width:0;height:0;overflow:hidden;"></div>
+
+            <img class="thumb" src="https://placehold.co/1000" crossorigin="anonymous">
+
+            <div class="title">
+                <span class="name"></span>
+                <span class="author"></span>
+            </div>
+
+            <div class="time">
+                <div class="time-line">
+                    <div class="bar"></div>
+                    <div class="active-bar"></div>
+                    <div class="time-target"></div>
+                </div>
+                <div class="minute">
+                    <span class="current-time">0:00</span>
+                    <span class="total-time">0:00</span>
+                </div>
+            </div>
+
+            <div class="control-btns">
+                <button class="alternate">
+                    <i class="iconoir-shuffle"></i>
+                </button>
+                <button class="previous">
+                    <i class="iconoir-skip-prev-solid"></i>
+                </button>
+                <button class="play">
+                    <i class="iconoir-play-solid iplay"></i>
+                    <i class="iconoir-pause-solid ipause"></i>
+                </button>
+                <button class="next">
+                    <i class="iconoir-skip-next-solid"></i>
+                </button>
+                <button class="loop">
+                    <i class="iconoir-repeat on"></i>
+                    <i class="iconoir-repeat-once one"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
